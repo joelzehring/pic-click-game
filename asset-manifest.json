@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pic-click-game/static/css/main.8006cc86.chunk.css",
-    "main.js": "/pic-click-game/static/js/main.dbfacd41.chunk.js",
-    "main.js.map": "/pic-click-game/static/js/main.dbfacd41.chunk.js.map",
+    "main.js": "/pic-click-game/static/js/main.ef679f62.chunk.js",
+    "main.js.map": "/pic-click-game/static/js/main.ef679f62.chunk.js.map",
     "runtime-main.js": "/pic-click-game/static/js/runtime-main.257f46ff.js",
     "runtime-main.js.map": "/pic-click-game/static/js/runtime-main.257f46ff.js.map",
     "static/js/2.a9c4bb90.chunk.js": "/pic-click-game/static/js/2.a9c4bb90.chunk.js",
     "static/js/2.a9c4bb90.chunk.js.map": "/pic-click-game/static/js/2.a9c4bb90.chunk.js.map",
     "index.html": "/pic-click-game/index.html",
-    "precache-manifest.82d88b25c53e43588bd44766702c1f79.js": "/pic-click-game/precache-manifest.82d88b25c53e43588bd44766702c1f79.js",
+    "precache-manifest.deea5dc53c28e54e5fb6ac6e6ea97dc0.js": "/pic-click-game/precache-manifest.deea5dc53c28e54e5fb6ac6e6ea97dc0.js",
     "service-worker.js": "/pic-click-game/service-worker.js",
     "static/css/main.8006cc86.chunk.css.map": "/pic-click-game/static/css/main.8006cc86.chunk.css.map",
     "static/js/2.a9c4bb90.chunk.js.LICENSE.txt": "/pic-click-game/static/js/2.a9c4bb90.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.257f46ff.js",
     "static/js/2.a9c4bb90.chunk.js",
     "static/css/main.8006cc86.chunk.css",
-    "static/js/main.dbfacd41.chunk.js"
+    "static/js/main.ef679f62.chunk.js"
   ]
 }

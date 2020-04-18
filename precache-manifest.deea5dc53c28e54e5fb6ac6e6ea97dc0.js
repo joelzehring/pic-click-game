@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a428de6d99c88795a802041528609657",
+    "revision": "043f5e8080b900dc13f899705a704949",
     "url": "/pic-click-game/index.html"
   },
   {
-    "revision": "294dc2a1ce57268154d6",
+    "revision": "d51c6bdc20f871116141",
     "url": "/pic-click-game/static/css/main.8006cc86.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pic-click-game/static/js/2.a9c4bb90.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "294dc2a1ce57268154d6",
-    "url": "/pic-click-game/static/js/main.dbfacd41.chunk.js"
+    "revision": "d51c6bdc20f871116141",
+    "url": "/pic-click-game/static/js/main.ef679f62.chunk.js"
   },
   {
     "revision": "1f1fdced0cb1af7825be",
