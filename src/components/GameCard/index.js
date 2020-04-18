@@ -7,11 +7,16 @@ class GameCard extends Component {
   }
   render () {
     return (
-      <div className='game-card'>
-	      <img id={ this.props.animalData.id } onClick={ this.props.handleClick.bind(this) } src={ this.props.animalData.imgLink } alt={ this.props.animalData.name } className="img-game-card" />
-      </div>
+    <div className="gameboard">
+      {this.props.animals.map(animal => {
+        return (
+          <div className='game-card'>
+            <img id={ animal.id } onClick={ this.props.handleClick.bind(this) } src={ animal.imgLink } alt={ animal.name } className="img-game-card" />
+          </div>
+        )
+      })}
+    </div>
     )
   }
 }
-
 export default GameCard;

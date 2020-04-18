@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 
 function ScoreBoard (props) {
-  let clickedAnimals = props.animalData.filter(animal => animal.isClicked === true);
+  let clickedAnimals = props.animalData.filter(animal => animal.isClicked == true);
   let currentScore = clickedAnimals.length;
 
   return (
@@ -10,7 +10,6 @@ function ScoreBoard (props) {
       <p>Score: <span> { currentScore } </span></p>
       <p>High Score: <span> { props.highScore } </span></p>
     </div>
-
   );
 }
 

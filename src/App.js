@@ -16,17 +16,30 @@ class App extends Component {
 	}
 	
 	handleClick(e) {
-		console.log(e.target.id);
-		let newAnimals = this.state.animals.map(animal => {
-			if (this.state.animals[e.target.id].isClicked === false) {
-				console.log("I'm false!");
-				animal.isClicked = true;
-				console.log("Now I'm " + animal.isClicked);
-			}
-		});
+		let index = e.target.id;
+		let newAnimals = this.state.animals;
 
-		this.setState( {animals: newAnimals} );
+		// If the isClicked status is true, it's game over.
+		if (newAnimals[index].isClicked) { 
+			alert(`Game Over!\nTry again!`);
+			// Reset isClicked values of all animals to false
+			newAnimals.map(animal => animal.isClicked = false);
+		} else {
+			// Set the isClicked value of the clicked animal to true
+			newAnimals[index].isClicked = true;
+		}
 		
+		// Tally the animals that have an isClicked value of true and set that number to the current score
+		let clickedAnimals = this.state.animals.filter(animal => animal.isClicked === true);
+		let currentScore = clickedAnimals.length;
+
+		this.shuffleCards(newAnimals);
+		// If the current score exceeds the high score, update the high score and update the animals object with new clicked values for the next round
+		this.setState( {highScore: currentScore > this.state.highScore ? currentScore : this.state.highScore, animals: newAnimals} );
+	}
+
+	shuffleCards =(newAnimals) => {
+		newAnimals.sort( () => Math.random() - 0.5);
 	}
   
   render () {
@@ -38,10 +51,8 @@ class App extends Component {
 				<main>
 					<p>Click a picture to increase your score, but don't click the same picture twice or it's game over!</p>
 					<ScoreBoard highScore={this.state.highScore} animalData={this.state.animals} />
-					<div className="gameboard">
-						{
-							this.state.animals.map((animalData) => { return <GameCard handleClick={ this.handleClick } animalData={ animalData } /> })
-						}
+					<div className="row">
+							<GameCard handleClick={ this.handleClick } animals={ this.state.animals } />
 					</div>
 				</main>
 				<footer>
