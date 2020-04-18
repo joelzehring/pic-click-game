@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "lion",
-    "imgLink": "/assets/images/lion.jpg",
+    "imgLink": "./assets/images/lion.jpg",
     "isClicked": false
   },
   {
